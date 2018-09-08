@@ -1,0 +1,662 @@
+/* USTAWIENIA OGÓLNE */
+
+html {
+    background-color: #FFFFFF;
+}
+
+body {
+    font-size: 16px;
+    font-family: Lato, Arial, 'Open Sans', sans-serif;
+    color: #2C2C2C;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.error {
+    clear: both;
+    color: #FF8900;
+    text-align: center;
+}
+
+.error.log {
+    text-align: left;
+}
+
+.error.log a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.error a:hover {
+    color: #FF8900;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: ' ';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* HEADER STRONY */
+
+.site-header{
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    background-color: #1B456D;
+    color: #FFFFFF;
+}
+
+/* LOGO STRONY */
+
+.site-header .site-logo {
+    float: left;
+    max-height: 160px;
+    margin-top: 20px;
+}
+
+.site-header .site-logo a {
+    display: block;
+    max-height: 160px;
+    cursor: pointer;
+}
+
+/* MENU STRONY */
+
+.site-navigation {
+    float: right;
+    margin-top: 48px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #3B6897;
+}
+
+.site-navigation ul li {
+    float: left;
+    margin-right: 45px;
+}
+
+.site-navigation ul li:last-child{
+    margin-right: 0;
+}
+
+.site-navigation a {
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.site-navigation a:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+/* PANEL UŻYTKOWNIKA + WYGLĄD PRZYCISKU "ZOBACZ WIĘCEJ" W SLIDERZE */
+
+.account-bar {
+    float: right;
+    width: 1010px;
+    box-sizing: border-box;
+    margin-top: 34px;
+    padding: 10px 20px;
+    background-color: #295786;
+}
+
+.log-in-form {
+    float: left;
+    max-width: 75%;
+    margin-bottom: 0;
+}
+
+.log-in-input, .log-in-button, .sign-up-button, .read-more-button,
+.transfer-button, .deposit-button {
+    width: 207px;
+    height: 43px;
+    font-size: 12px;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.log-in-input {
+    margin-right: 20px;
+    padding: 0;
+    border: 0;
+    background-color: #3B6897;
+    line-height: 43px;
+}
+
+.log-in-button, .transfer-button, .deposit-button {
+    border: 0;
+    background-color: #129FDD;
+    cursor: pointer;
+}
+
+.log-in-button:hover, .transfer-button:hover, .deposit-button:hover {
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+}
+
+.sign-up-button, .read-more-button {
+    display: block;
+    float: right;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0);
+    background-color: #FF8900;
+    line-height: 43px;
+    cursor: pointer;
+}
+
+.sign-up-button:hover, .read-more-button:hover {
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+}
+
+/* SLIDER */
+
+.slider {
+    margin: 0 auto;
+}
+
+.slider-article {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/slider-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-content {
+    max-width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 100px 20px;
+    background-color: rgba(27,69,109,0.7);
+    color: #FFFFFF;
+}
+
+.slider-content a {
+    color: #FFFFFF;
+}
+
+.slider-headline {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.slider-headline a:hover {
+    color: #FF8900;
+}
+
+.slider-lead {
+    font-size: 24px;
+}
+
+.read-more-button {
+    margin-top: 40px;
+    float: left;
+}
+
+.slider-bar {
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background-color: #1B456D;
+}
+
+.slider-bar .wrapper {
+    box-sizing: border-box;
+    border-top: 1px solid #3B6897;
+}
+
+.slider-bar li {
+    float: left;
+    height: 80px;
+    width: 398px;
+    margin-right: 3px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slider-bar li:last-child {
+    margin-right: 0;
+}
+
+.slider-bar li a {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-top: 2px solid transparent;
+}
+
+.slider-bar li a:hover {
+    border-top: 2px solid #FFFFFF;
+}
+
+
+/* AKTUALNOŚCI */
+
+.news {
+    margin: 60px auto;
+    height: initial;
+}
+
+.news-headline {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.news-element {
+    max-width: 398px;
+    height: 370px;
+    float: left;
+    margin-right: 3px;
+}
+
+.news-element:last-child {
+    margin-right: 0;
+}
+
+.news-element > a {
+    display: block;
+    height: 200px;
+    margin-bottom: 6px;
+    border-bottom: 4px solid transparent;
+}
+
+.news-element > a:hover {
+    border-bottom: 4px solid #FF8900;
+}
+
+.news-date, .news-title, .news-lead {
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.news-date {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.news-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.news a:hover {
+    color: #FF8900;
+}
+
+
+/* STOPKA STRONY */
+
+.site-footer {
+    height: 50px;
+    background-color: #0D0D0D;
+    font-size: 14px;
+}
+
+.site-footer .wrapper {
+    padding: 0 120px;
+    box-sizing: border-box;
+}
+
+.site-footer .footer-leftside, .footer-leftside li, .footer-rightside li {
+    float: left;
+}
+
+.site-footer .footer-rightside {
+    float: right;
+}
+
+.law {
+    margin-right: 100px;
+}
+
+.law:last-child {
+    margin-right: 0;
+}
+
+.copy, .social-media {
+    margin-right: 50px;
+}
+
+.social-media:last-child {
+    margin-right: 0;
+}
+
+.law a, .copy, .social-media {
+    line-height: 50px;
+}
+
+.social-media a img {
+    vertical-align: middle;
+}
+
+.law a, .copy {
+    color: #909090;
+}
+
+.law a:hover {
+    color: #FFFFFF;
+}
+
+
+/* PODSTRONA UZYTKOWNIKA */
+
+.account-bar.logged-in {
+    height: 63px;
+    padding: 0 40px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.account-bar.logged-in li {
+    float: left;
+}
+
+.account-options {
+    float: right;
+}
+
+.account-options li{
+    margin: 0 0 0 80px;
+}
+
+.account-options a{
+    color: #FFFFFF;
+    line-height: 63px;
+}
+
+.account-options a:hover{
+    color: #43B9EE;
+}
+
+.account-profile {
+    margin-top: 7px;
+    padding-right: 50px;
+    border-right: 2px solid #43B9EE;
+    font-size: 20px;
+    text-align: center;
+}
+
+.account-profile a {
+    color: #BFCCD5;
+    line-height: 0;
+    text-transform: none;
+}
+
+.account-profile a:hover {
+    color: #43B9EE;
+}
+
+.account-options li{
+    margin: 0 0 0 80px;
+}
+
+.right-side .account-option:nth-child(2){
+    margin: 0 50px 0 80px;
+}
+
+/* WYSUWANE OKNA */
+
+.account-details, .operations-history, .bank-transfer, .bank-deposit {
+    display: none;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+/* OKNO SZCZEGÓŁÓW KONTA */
+
+.account-details table, .bank-deposit table{
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+
+.account-details table th, .bank-deposit table th {
+    font-weight: 700;
+    color: #5682b2;
+}
+
+.account-details table td, .bank-deposit table td {
+    font-size: 22px;
+    font-weight: 900;
+    color: #F68500;
+}
+
+.account-details table td:last-child {
+    color: #12aaeb;
+}
+
+.account-details table td, .bank-deposit table td {
+    padding: 10px 75px 0 75px;
+}
+
+/* OKNO PRZELEWU */
+
+.bank-transfer, .bank-deposit {
+    max-width: 700px;
+}
+
+.bank-transfer label, .bank-deposit label {
+    display: block;
+    margin: 20px auto;
+    font-weight: 700;
+    color: #5682B2;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.bank-transfer .transfer-input, .bank-deposit .deposit-input {
+    width: 50%;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgba(200, 211, 220, 0.302);
+    height: 50px;
+    padding: 0 20px;
+    color: #000000;
+    float: right;
+}
+
+.bank-transfer .transfer-button, .bank-deposit .deposit-button {
+    display: block;
+    margin: 40px auto 20px auto;
+}
+
+/* KOMUNIKAT WYKONANIA PRZELEWU */
+
+.completed {
+    margin: 300px auto 0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: #2CA02C;
+}
+
+.completed .transaction-completed {
+    margin: 10px 0 20px 0;
+}
+
+.completed .home-return {
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+.completed .home-return:hover {
+    color: #2CA02C;
+    text-decoration: underline;
+}
+
+/* OKNO HISTORII OPERACJI */
+
+.history-table {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  margin: 20px auto;
+  max-width: 1000px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+.history-table th {
+  color:#D5DDE5;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:18px;
+  font-weight: 100;
+  padding:20px;
+  text-align:center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+.history-table th:first-child {
+  border-top-left-radius:3px;
+}
+
+.history-table th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+
+.history-table tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+.history-table tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+.history-table tr:first-child {
+  border-top:none;
+}
+
+.history-table tr:last-child {
+  border-bottom:none;
+}
+
+.history-table tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+
+.history-table tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+.history-table tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+
+.history-table tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+
+.history-table td {
+  background:#FFFFFF;
+  padding:15px;
+  text-align:center;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:16px;
+  border-right: 1px solid #C1C3D1;
+}
+
+.history-table td:last-child {
+  border-right: 0px;
+}
+
+/* Informacje o użytkowniku */
+
+.personal-info {
+    margin: 40px auto 60px auto;
+    font-size: 20px;
+}
+
+.user-names {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #FF8900;
+    text-transform: uppercase;
+}
+
+.personal-info th {
+    padding: 20px 20px;
+    color: #295786;
+    text-transform: uppercase;
+}
+
+.personal-info td {
+    padding: 20px 20px;
+}
+
+.info {
+    margin-bottom: 100px;
+    font-size: 18px;
+    text-align: center;
+    color: #FF8900;
+}
