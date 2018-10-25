@@ -1,2 +1,2 @@
-# PHP---OldBank---an-online-bank-application
-PHP Project
+# PHP project - OldBank
+An online bank application.
